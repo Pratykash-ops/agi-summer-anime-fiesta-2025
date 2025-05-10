@@ -27,8 +27,8 @@ export default function RootLayout({
          <meta name="author" content="Anime Group India" />
         <meta property="og:title" content="Summer Anime Fiesta 2025" />
         <meta property="og:description" content="Celebrate anime culture in Delhi this summer — cosplay, screenings, food, friends, and fun. Limited seats, register now!" />
-        <meta property="og:image" content="/static/og-image.ppng" />
-        <meta property="og:url" content="/static/og-image.ppng" />
+        <meta property="og:image" content="/static/og-image.png" />
+        <meta property="og:url" content="/static/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </head>
       <body className={roboto.className+' '}>

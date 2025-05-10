@@ -2,6 +2,7 @@
 
 import { IconButton, Button, Typography } from "@material-tailwind/react";
 import { PlayIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -14,7 +15,7 @@ function Hero() {
           Early June @ New Delhi
         </Typography>
         <Typography variant="h1" color="white" className="lg:max-w-3xl">
-          AGI Presents: Summer Anime Fiesta 2025
+          AGI Presents <span className="text-yellow-400">Summer Anime Fiesta 2025</span>
         </Typography>
         <Typography
           variant="lead"
@@ -24,9 +25,11 @@ function Hero() {
           Join us on a Celebration of Anime, Summer, and You.
         </Typography>
         <div className="flex items-center gap-4">
+          <Link href="#about">
           <Button variant="gradient" color="white">
             Get started
           </Button>
+          </Link>
           {/* <IconButton className="rounded-full bg-white p-6">
             <PlayIcon className="h-4 w-4 text-gray-900" />
           </IconButton> */}
