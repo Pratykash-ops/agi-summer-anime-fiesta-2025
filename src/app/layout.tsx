@@ -10,9 +10,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Event Landing Page",
+  title: "Summer Anime Fiesta 2025 | Delhi's Ultimate Anime Event",
   description:
-    "Introducing Tailwind Event Landing Page, a dynamic and visually appealing landing page template designed using Tailwind CSS and Material Tailwind.",
+    "Join us for Summer Anime Fiesta 2025 — an exclusive anime celebration in Delhi with cosplay, screenings, games & more. Register now!",
 };
 
 export default function RootLayout({
@@ -23,17 +23,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          defer
-          data-site="YOUR_DOMAIN_HERE"
-          src="https://api.nepcha.com/js/nepcha-analytics.js"
-        ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+         <meta name="author" content="Anime Group India" />
+        <meta property="og:title" content="Summer Anime Fiesta 2025" />
+        <meta property="og:description" content="Celebrate anime culture in Delhi this summer — cosplay, screenings, food, friends, and fun. Limited seats, register now!" />
+        <meta property="og:image" content="/static/og-image.ppng" />
+        <meta property="og:url" content="/static/og-image.ppng" />
+        <meta name="twitter:card" content="summary_large_image" />
       </head>
-      <body className={roboto.className}>
+      <body className={roboto.className+' '}>
         <Layout>
           {children}
-          <FixedPlugin />
         </Layout>
         <link
           rel="stylesheet"

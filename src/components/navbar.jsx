@@ -14,13 +14,10 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
-interface NavItemProps {
-  children: React.ReactNode;
-  href?: string;
-}
 
-function NavItem({ children, href }: NavItemProps) {
+function NavItem({ children, href }) {
   return (
     <li>
       <Typography
@@ -37,19 +34,20 @@ function NavItem({ children, href }: NavItemProps) {
 }
 
 const NAV_MENU = [
-  {
-    name: "Page",
-    icon: RectangleStackIcon,
-  },
-  {
-    name: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    name: "Docs",
-    icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
-  },
+  // {
+  //   name: "Instagram",
+  //   icon: RectangleStackIcon,
+  //   href: 'https://instagram.com/animegroupindia'
+  // },
+  // {
+  //   name: "Account",
+  //   icon: UserCircleIcon,
+  // },
+  // {
+  //   name: "Docs",
+  //   icon: CommandLineIcon,
+  //   href: "https://www.material-tailwind.com/docs/react/installation",
+  // },
 ];
 
 export function Navbar() {
@@ -83,16 +81,16 @@ export function Navbar() {
     <MTNavbar
       shadow={false}
       fullWidth
-      blurred={false}
+      blurred={true}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
+      className="fixed top-0 z-[9999] border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
         >
-          Material Tailwind
+          Summer Anime Fiesta 
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
@@ -107,11 +105,13 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-4 lg:flex">
+          <Link href='https://www.instagram.com/animegroupindia' about='_blank'>
           <Button color={isScrolling ? "gray" : "white"} variant="text">
-            Log in
+            Updates
           </Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"}>blocks</Button>
+          </Link>
+          <a href="/passes">
+            <Button color={isScrolling ? "gray" : "white"}>Buy Passes</Button>
           </a>
         </div>
         <IconButton
@@ -138,10 +138,10 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 flex items-center gap-4">
-            <Button variant="text">Log in</Button>
-            <a href="https://www.materila-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
-            </a>
+            {/* <Button variant="text">Log in</Button> */}
+            <Link href="/passes" >
+              <Button color="gray">By Passes</Button>
+            </Link>
           </div>
         </div>
       </Collapse>

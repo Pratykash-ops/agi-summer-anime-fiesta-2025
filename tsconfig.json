@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/app/hero.jsx", "src/app/our-stats.jsx", "src/app/sponsored-by.jsx", "src/components/about-card.jsx", "src/components/event-content-card.jsx", "src/components/fixed-plugin.jsx", "src/components/footer.jsx", "src/components/navbar.jsx", "src/components/stats-card.jsx"  ],
   "exclude": [
     "node_modules"
   ]

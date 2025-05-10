@@ -5,16 +5,18 @@ import AboutCard from "@/components/about-card";
 
 const EVENT_INFO = [
   {
-    title: "Cutting-Edge Insights!",
+    title: "Live Your Favorite Characters",
+    extraClass: 'bg-[url("/static/chainsawman.jpeg")] ',
     description:
-      "Gain deep insights into the latest AI trends, developments, and applications that are reshaping industries worldwide. ",
-    subTitle: "Presentation",
+      "Come in cosplay or just to admire the craftsmanship — the energy is electric either way. ",
+    subTitle: "Cosplay",
   },
   {
-    title: "Practical Knowledge!",
+    title: "Exclusive Merch & Art",
+    extraClass: 'bg-[url("/static/merch.jpg")] ',
     description:
-      "Attend workshops and hands-on sessions to acquire practical skills that you can apply immediately.",
-    subTitle: "Workshops",
+      "From handmade charms to stunning fan art — support local anime artists and creators.",
+    subTitle: "Merchandise",
   },
 ];
 
@@ -31,10 +33,7 @@ export function AboutEvent() {
         variant="lead"
         className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
-        Welcome to the AI Conference 2023, where the future unfolds! Whether
-        you&apos;re a seasoned AI professional, a curious newcomer, or a
-        business leader looking to harness the power of AI, this conference is
-        designed to inspire, educate, and connect.
+        This isn&apos;t just another fan meet — it&apos;s a carefully curated slice of Japan&apos;s heart, crafted by true anime lovers, for anime lovers.
       </Typography>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
@@ -42,9 +41,10 @@ export function AboutEvent() {
         ))}
         <div className="md:col-span-2">
           <AboutCard
-            title="Networking!"
-            subTitle="Community"
-            description="Connect with industry leaders, AI experts, and fellow enthusiasts to build valuable professional relationships."
+             extraClass={'bg-[url("/static/fans-02.jpeg")] '}
+            subTitle="Community "
+            title="Meet Like-Minded Fans"
+            description="Whether you're a shy senpai or a loud kouhai, find your tribe. Laugh, vibe, and create unforgettable friendships."
           />
         </div>
       </div>
