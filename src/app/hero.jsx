@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="relative min-h-screen w-full bg-[url('/image/gojo-n-team.jpg')] bg-cover bg-no-repeat">
+    <div className="relative min-h-screen w-full bg-[url('/image/gojo-n-team.jpg')] bg-cover bg-center bg-no-repeat">
       
     <div className="absolute inset-0 h-full w-full bg-black/60" />
     <div className="grid min-h-screen px-8">

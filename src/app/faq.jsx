@@ -24,10 +24,6 @@ const FAQS = [
     answer: "Yes — we're preparing for Japanese snacks stall to be available. Bring some cash just in case."
   },
   {
-    question: "What if I register but can't come?",
-    answer: "Please let us know at least 3 days before the event so we can pass your spot to someone on the waitlist."
-  },
-  {
     question: "Can I bring a friend?",
     answer: "Only if they register separately. Each entry is individual due to limited space."
   },
