@@ -6,6 +6,7 @@ import { Typography } from "@material-tailwind/react";
 const SPONSORS = [
   "go-stops",
   "pacific-d21b",
+  'studio_21'
 ];
 
 export function SponsoredBy() {
