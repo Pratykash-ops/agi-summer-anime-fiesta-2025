@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
@@ -26,7 +28,12 @@ const Countdown = ({ targetDate }) => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -38,7 +45,7 @@ const Countdown = ({ targetDate }) => {
   return (
     <div className="max-w-sm mx-auto p-4 ">
       <div className="flex flex-col items-center">
-        <Typography variant="h4" className="mb-4 text-gray-800">
+        <Typography variant="h4" className="mb-4 text-gray-800 ">
           Countdown
         </Typography>
         <div className="flex space-x-4 text-center">

@@ -9,15 +9,15 @@ const FAQS = [
   },
   {
     question: "Where exactly is it happening in Delhi?",
-    answer: "The venue will be announced soon. It'll be a central location easily reachable by metro and public transport."
+    answer: "There will be 2 venues ie: Pacific D21 for Clan Warsand GoStops for  VIP Event. It is a central location easily reachable by metro and public transport."
   },
   {
-    question: "Do I have to come in cosplay?",
-    answer: "Nope! Cosplay is optional. But if you want to flex your fit, there&apos;ll be a parade and photo session!"
+    question: "What are the timings?",
+    answer: "The timings are 11:00 AM to 5:30PM for both events"
   },
   {
-    question: "What kind of anime content will be shown?",
-    answer: "Expect a mix of iconic scenes, fun edits, and maybe a surprise AMV or two — all safe-for-public and community-approved."
+    question: "Will there be baisc amenties within the venue",
+    answer: "Yes, all basic amenties like bathroom and drinking water will be availble "
   },
   {
     question: "Will there be food and drinks?",
@@ -42,12 +42,12 @@ export function Faq() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography variant="h1" color="blue-gray" className="mb-4 md:text-2xl text-xl bg-gradient-to-b from-pink-400 to-red-500 bg-clip-text text-transparent">
             Frequently asked questions
           </Typography>
           <Typography
             variant="lead"
-            className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
+            className="mx-auto mb-8 lg:w-3/5 !text-gray-500"
           >
             “Got Questions?”
           </Typography>
@@ -60,13 +60,13 @@ export function Faq() {
               open={open === key + 1}
               onClick={() => handleOpen(key + 1)}
             >
-              <AccordionHeader className="text-left text-gray-900">
+              <AccordionHeader className="text-left md:text-lg text-sm text-gray-900">
                 {title}
               </AccordionHeader>
               <AccordionBody>
                 <Typography
                   color="blue-gray"
-                  className="font-normal text-gray-500"
+                  className="font-normal text-gray-500 md:text-normal text-sm"
                 >
                   {desc}
                 </Typography>

@@ -90,7 +90,7 @@ export function Navbar() {
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
         >
-          Summer Anime Fiesta 
+          <Link href='/'>Summer Anime Fiesta </Link>
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
@@ -140,7 +140,7 @@ export function Navbar() {
           <div className="mt-6 flex items-center gap-4">
             {/* <Button variant="text">Log in</Button> */}
             <Link href="/passes" >
-              <Button color="gray">By Passes</Button>
+              <Button color="gray">Buy Passes</Button>
             </Link>
           </div>
         </div>

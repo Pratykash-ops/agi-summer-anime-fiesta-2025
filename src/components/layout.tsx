@@ -1,10 +1,22 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ThemeProvider } from "@material-tailwind/react";
-
+import Navbar from "./navbar";
 export function Layout({ children }: { children: React.ReactNode }) {
-  return <ThemeProvider>{children}</ThemeProvider>;
+  // const router = useRouter()
+  // const [progress, setProgress] = useState(0);
+  useEffect(() => {
+
+  }, [])
+
+  return <>
+    <ThemeProvider>
+
+      <Navbar />
+      {children}
+    </ThemeProvider>
+  </>
 }
 
 export default Layout;

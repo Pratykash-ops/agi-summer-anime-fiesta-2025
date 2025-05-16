@@ -7,23 +7,22 @@ export function Footer() {
   return (
     <footer className="pb-5 p-10 md:pt-10">
       <div className="container flex flex-col mx-auto">
-        <div className="flex !w-full py-20 mb-5 md:mb-20 flex-col !justify-center !items-center bg-[url('https://res.cloudinary.com/dlyq01q0n/image/upload/v1747064213/assets/PrevEvent/AGI_EVENT_IMG_93401966_ee2ey9.jpg')] bg-no-repeat bg-cover bg- max-w-6xl mx-auto rounded-2xl p-5 ">
+        <div className="flex !w-full py-20 mb-5 md:mb-20 flex-col !justify-center !items-center  bg-no-repeat bg-cover bg- max-w-6xl mx-auto rounded-2xl p-5 ">
           <Typography
-            className="text-2xl md:text-3xl text-center font-bold "
-            color="white"
+            className="text-2xl md:text-3xl text-center font-bold bg-gradient-to-b from-pink-400 to-red-500 bg-clip-text text-transparent"
           >
-            Coming Soon
+            Tickets are live now!
           </Typography>
           <Typography
             color="white"
-            className=" md:w-7/12 text-center my-3 !text-base"
+            className=" md:w-7/12 text-center my-3 !text-base bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text"
           >
             Don&apos;t miss out on this exclusive offer that will end soon.
           </Typography>
           <div className="flex md:w-fit gap-3 mt-2 flex-col">
-            <Link href='https://instagram.com/animegroupindia'>
+            <Link href='/passes'>
             <Button color="white" size="md">
-              Stay Updated
+              Buy the Tickets
             </Button>
             </Link>
           </div>

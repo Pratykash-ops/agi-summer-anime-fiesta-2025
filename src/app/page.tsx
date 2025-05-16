@@ -8,16 +8,21 @@ import AboutEvent from "./about-event";
 import OurStats from "./our-stats";
 import EventContent from "./event-content";
 import Faq from "./faq";
-
-export default function Portfolio() {
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Summer Anime Fiesta 2025 | Delhi's Ultimate Anime Event",
+  description:
+    "Join us for Summer Anime Fiesta 2025 — an exclusive anime celebration in Delhi with cosplay, screenings, games & more. Register now!",
+};
+export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
-      <SponsoredBy />
       <AboutEvent />
       {/* <OurStats /> */}
       <EventContent />
+      <SponsoredBy />
       <Faq />
       <Footer />
     </>

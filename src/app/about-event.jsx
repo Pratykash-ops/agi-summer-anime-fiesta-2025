@@ -25,7 +25,7 @@ export function AboutEvent() {
   return (
     <section id='about' className="container mx-auto flex flex-col items-center px-4 py-10">
       <div className="my-8">
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/PP8nz-QYq_U" title="AGI SAF TRAILER - T01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe className="w-80 md:w-[636px] aspect-video" src="https://www.youtube.com/embed/PP8nz-QYq_U" title="AGI SAF TRAILER - T01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <div className="absolute -z-50 opacity-20">
 
