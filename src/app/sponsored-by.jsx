@@ -18,14 +18,15 @@ export function SponsoredBy() {
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-8">
           {SPONSORS.map((logo, key) => (
-            <div className="relative w-24 h-24 md:w-40 md:h-40">
-            <Image
-            layout="fill"
-            objectFit="contain"
-            key={key}
-            src={`/logos/${logo}.png`}
-            alt={logo}
-            />
+            <div
+              key={key}
+              className="relative w-24 h-24 md:w-40 md:h-40">
+              <Image
+                layout="fill"
+                objectFit="contain"
+                src={`/logos/${logo}.png`}
+                alt={logo}
+              />
             </div>
           ))}
         </div>
