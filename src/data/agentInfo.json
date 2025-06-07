@@ -1,0 +1,242 @@
+{"data":[
+    {
+        "id": "x7c29u",
+        "character": "Naruto Uzumaki",
+        "anime": "Naruto",
+        "image": "/assets/d01/432c7cebc16599ab561559920920191c.jpg",
+        "special_move": "Rasengan",
+        "description": "A hyperactive ninja who dreams of becoming Hokage. He wields immense chakra and carries the Nine-Tails within him."
+    },
+    {
+        "id": "r9z84q",
+        "character": "Sasuke Uchiha",
+        "anime": "Naruto",
+        "image": "/assets/d01/cbd04b0a85a39e15a7590db89e175daa.jpg",
+        "special_move": "Chidori",
+        "description": "Last survivor of the Uchiha clan's massacre. Driven by revenge, he wields the Sharingan and lightning-based techniques."
+    },
+    {
+        "id": "k1n77a",
+        "character": "Goku",
+        "anime": "Dragon Ball Z",
+        "image": "/assets/d01/46048d046e6ff9d0c1e219fe06926a1d.jpg",
+        "special_move": "Kamehameha",
+        "description": "A Saiyan raised on Earth, known for his boundless strength and pure heart. Always seeks stronger opponents."
+    },
+    {
+        "id": "v3p12e",
+        "character": "Vegeta",
+        "anime": "Dragon Ball Z",
+        "image": "/assets/d01/51fa9958be33b0e9f196688edb84395f.jpg",
+        "special_move": "Final Flash",
+        "description": "Prideful Prince of the Saiyan race. He's a fierce rival to Goku and driven by personal strength and legacy."
+    },
+    {
+        "id": "m8w35b",
+        "character": "Ichigo Kurosaki",
+        "anime": "Bleach",
+        "image": "/assets/d01/cff66bcd5361c982066aa65d6d345526.jpg",
+        "special_move": "Getsuga Tensho",
+        "description": "A human who becomes a Soul Reaper, Ichigo protects the living and the dead with his massive spirit energy."
+    },
+    {
+        "id": "z4h01t",
+        "character": "Rukia Kuchiki",
+        "anime": "Bleach",
+        "image": "/assets/d01/eb8fc480a888843dca3be6a461b54938.jpg",
+        "special_move": "Sode no Shirayuki",
+        "description": "A noble Soul Reaper with a calm presence and strong sense of duty. She mentors Ichigo and uses graceful ice-based attacks."
+    },
+    {
+        "id": "b2q89f",
+        "character": "Monkey D. Luffy",
+        "anime": "One Piece",
+        "image": "/assets/d01/344f2142b0a102999172b7554db97cf3.jpg",
+        "special_move": "Gum-Gum Pistol",
+        "description": "Captain of the Straw Hats and a rubber man with a dream of becoming Pirate King. Fearless, goofy, and loyal to his crew."
+    },
+    {
+        "id": "y5n04m",
+        "character": "Zoro Roronoa",
+        "anime": "One Piece",
+        "image": "/assets/d01/4ce30f1b28d93da7b0b228cc29979e43.jpg",
+        "special_move": "Three Sword Style",
+        "description": "A swordsman who uses three katanas with brute force and unmatched willpower. He\u2019s fiercely loyal to Luffy."
+    },
+    {
+        "id": "t6l48j",
+        "character": "Gojo Satoru",
+        "anime": "Jujutsu Kaisen",
+        "image": "/assets/d01/00dfa898aa65cef8b7826afaadc90dae.jpg",
+        "special_move": "Hollow Purple",
+        "description": "A carefree yet overpowered sorcerer. Gojo\u2019s cursed techniques and his domain expansion make him nearly untouchable."
+    },
+    {
+        "id": "n0r21c",
+        "character": "Yuji Itadori",
+        "anime": "Jujutsu Kaisen",
+        "image": "/assets/d01/e7de17af8ad159819a8d25768cb92a19.jpg",
+        "special_move": "Divergent Fist",
+        "description": "A strong-willed teen who became a Jujutsu sorcerer by housing Sukuna\u2019s cursed power. Fights with raw emotion and purpose."
+    },
+    {
+        "id": "w8d19y",
+        "character": "Levi Ackerman",
+        "anime": "Attack on Titan",
+        "image": "/assets/d01/b589dbe9abc83b729095a560a243625b.jpg",
+        "special_move": "Omni-Directional Mobility",
+        "description": "A stoic, elite soldier of humanity. Known for his precise, deadly moves and unmatched agility in titan combat."
+    },
+    {
+        "id": "q2b74p",
+        "character": "Eren Yeager",
+        "anime": "Attack on Titan",
+        "image": "/assets/d01/e5a73f2ebc56d2d8d9e1460856f60f1c.jpg",
+        "special_move": "Founding Titan",
+        "description": "Driven by freedom and revenge, Eren holds the power to control titans and reshape the fate of the world."
+    },
+    {
+        "id": "f9x66j",
+        "character": "Tanjiro Kamado",
+        "anime": "Demon Slayer",
+        "image": "/assets/d01/1fd2353bc016e57efaa664822ed4a1e1.jpg",
+        "special_move": "Water Breathing",
+        "description": "A kind-hearted demon slayer seeking to cure his sister. Wields a sword with elegant, fluid techniques."
+    },
+    {
+        "id": "a0u53k",
+        "character": "Nezuko Kamado",
+        "anime": "Demon Slayer",
+        "image": "/assets/d01/3476e341cca24a2545d8e3279510ca62.jpg",
+        "special_move": "Blood Demon Art",
+        "description": "A demon who protects humans. Though silent, she fights fiercely with explosive blood techniques."
+    },
+    {
+        "id": "l3s92d",
+        "character": "Light Yagami",
+        "anime": "Death Note",
+        "image": "/assets/d01/f4c3da9c838b1b6ced58488fcb2c9931.jpg",
+        "special_move": "Death Note",
+        "description": "A genius high schooler with a god complex. Uses a deadly notebook to eliminate criminals in secret."
+    },
+    {
+        "id": "h7e38z",
+        "character": "L",
+        "anime": "Death Note",
+        "image": "/assets/d01/66ce11fb4168efc9c2b7fc0318ce9ccd.jpg",
+        "special_move": "Genius Detective",
+        "description": "An eccentric, world-class detective. Solves cases with raw intellect and strange, unpredictable behavior."
+    },
+    {
+        "id": "d6g15x",
+        "character": "Saitama",
+        "anime": "One Punch Man",
+        "image": "/assets/d01/8613b1ef96a051c502540258fc5e5976.jpg",
+        "special_move": "One Punch",
+        "description": "A bored superhero who defeats enemies in a single punch. Struggles more with boredom than battles."
+    },
+    {
+        "id": "j4m80v",
+        "character": "Genos",
+        "anime": "One Punch Man",
+        "image": "/assets/d01/cb9fd681c5d64e03fd43ca73fc7fae9d.jpg",
+        "special_move": "Incinerate",
+        "description": "A serious cyborg seeking strength and vengeance. Loyal to Saitama and relentless in combat."
+    },
+    {
+        "id": "s1t02q",
+        "character": "Mikasa",
+        "anime": "Attack on Titan",
+        "image": "/assets/d01/47d15d8b0e35959aaf5c63a874666e68.jpg",
+        "special_move": "Omni-Directional Slash",
+        "description": "A deadly warrior driven by loyalty to Eren. Mikasa is calm, calculating, and nearly unstoppable in battle."
+    },
+    {
+        "id": "u5k90r",
+        "character": "Haku",
+        "anime": "Spirited Away",
+        "image": "/assets/d01/52c22d3d22e23652ea48c2897804adfa.jpg",
+        "special_move": "River Spirit Transformation",
+        "description": "A river spirit in human form who helps Chihiro. Mysterious and kind, he fights for her freedom."
+    },
+    {
+        "id": "n6v43t",
+        "character": "Edward Elric",
+        "anime": "Fullmetal Alchemist",
+        "image": "/assets/d01/f9b10da9f462320cbf818e3215839f65.jpg",
+        "special_move": "Alchemy",
+        "description": "The Fullmetal Alchemist, a brilliant but stubborn prodigy. Sacrificed greatly to seek redemption for his brother."
+    },
+    {
+        "id": "z0p88m",
+        "character": "Alphonse Elric",
+        "anime": "Fullmetal Alchemist",
+        "image": "/assets/d01/2055e7fe8512e83870c5c9c2e1748413.jpg",
+        "special_move": "Armor Alchemy",
+        "description": "A gentle soul trapped in a giant suit of armor. He\u2019s wise, calm, and often more mature than his older brother."
+    },
+    {
+        "id": "c3y70g",
+        "character": "Rem",
+        "anime": "Re:Zero",
+        "image": "/assets/d01/b7f76fed738e2a27009de569b88c475a.jpg",
+        "special_move": "Morning Star",
+        "description": "A demon maid with unwavering loyalty and strength. Fights ferociously but loves with quiet intensity."
+    },
+    {
+        "id": "e1k39n",
+        "character": "Emilia",
+        "anime": "Re:Zero",
+        "image": "/assets/d01/7c38b4b984b5ffe3cc82c20e55d9a445.jpg",
+        "special_move": "Ice Magic",
+        "description": "A half-elf with a pure heart and mysterious past. Uses ice-based magic and radiates calm gentleness."
+    },
+    {
+        "id": "v7q54x",
+        "character": "Makima",
+        "anime": "Chainsaw Man",
+        "image": "/assets/d01/2dfcec2cec0151acdfc9c3747952e0b5.jpg",
+        "special_move": "Control Devil Powers",
+        "description": "Mysterious and manipulative, she controls others with eerie calm. Beautiful, terrifying, and unreadable."
+    },
+    {
+        "id": "b8f21e",
+        "character": "Denji",
+        "anime": "Chainsaw Man",
+        "image": "/assets/d01/30c78f9995dd64e7c12c572d9b59cbf9.jpg",
+        "special_move": "Chainsaw Devil Form",
+        "description": "A broke devil hunter turned half-devil. He\u2019s raw, honest, and craves love as much as battle."
+    },
+    {
+        "id": "k2j13b",
+        "character": "Shinobu Kocho",
+        "anime": "Demon Slayer",
+        "image": "/assets/d01/263c8f9084929b7838a897dd0d54f46e.jpg",
+        "special_move": "Insect Breathing",
+        "description": "A graceful, poison-wielding Hashira. Her smile hides rage for demons who took her sister."
+    },
+    {
+        "id": "r4w86s",
+        "character": "Totoro",
+        "anime": "My Neighbour Tototro",
+        "image": "/assets/d01/a5a66587c4e64ed0c0fee960c6522487.jpg",
+        "special_move": "Nature Spirit Presence",
+        "description": "A quiet, emotionless pilot with a mysterious origin. She\u2019s essential to humanity\u2019s survival, yet barely human."
+    },
+    {
+        "id": "m0x75v",
+        "character": "Shoyo Hinata",
+        "anime": "Haikyuu!!",
+        "image": "/assets/d01/597893f8a7adb93a1c42c16a7e0b1548.jpg",
+        "special_move": "Quick Spike",
+        "description": "A short volleyball prodigy with boundless energy and a burning desire to fly. His spirit inspires everyone."
+    },
+    {
+        "id": "r7b92f",
+        "character": "Muzan Kibutsuji",
+        "anime": "Demon Slayer",
+        "image": "/assets/d01/c95f6f697518cdaea44ff0e20d282266.jpg",
+        "special_move": "Cellular Manipulation",
+        "description": "The progenitor of all demons. Charismatic, cruel, and nearly immortal \u2014 he changes form at will and rules from the shadows."
+    }
+]}
