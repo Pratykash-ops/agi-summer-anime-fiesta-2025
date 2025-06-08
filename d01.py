@@ -1,60 +1,40 @@
-import os
-import json
+import csv
 import requests
-from urllib.parse import urlparse
-from pathlib import Path
+import base64
 
-# Path to your JSON file (update this)
-json_file_path = 'src/data/agentInfo.json'
-download_folder = 'public/assets/d01/'  # Folder to save the images
+# === CONFIG ===
+input_csv = "characters_with_qr.csv"         # Existing CSV file with image URLs
+output_csv = "characters_embedded.csv"  # New CSV with base64 image data
+image_url_column = "qr_image_url"           # Column name containing image URLs
 
-# Ensure the download folder exists
-Path(download_folder).mkdir(parents=True, exist_ok=True)
-
-# Load the JSON data
-with open(json_file_path, 'r') as f:
-    characters = json.load(f)['data']
-
-# Function to download the image
-def download_image(image_url, file_name):
+def image_to_data_uri(url):
     try:
-        # Send GET request to fetch the image
-        response = requests.get(image_url, stream=True)
-        if response.status_code == 200:
-            # Save the image locally
-            image_path = os.path.join(download_folder, file_name)
-            with open(image_path, 'wb') as img_file:
-                for chunk in response.iter_content(1024):
-                    img_file.write(chunk)
-            print(f"Downloaded: {image_url} -> {image_path}")
-            return image_path
-        else:
-            print(f"Failed to download image: {image_url}")
-            return None
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        content_type = response.headers.get("Content-Type", "image/png")
+        base64_str = base64.b64encode(response.content).decode("utf-8")
+        return f"data:{content_type};base64,{base64_str}"
     except Exception as e:
-        print(f"Error downloading image: {image_url} -> {e}")
-        return None
+        print(f"[⚠️] Failed for {url}: {e}")
+        return ""
 
-# Function to update the JSON object with the new image URL
-def update_json_with_local_path():
-    for char in characters:
-        image_url = char.get("image")
-        if image_url:
-            # Generate a valid file name (from the URL)
-            parsed_url = urlparse(image_url)
-            file_name = os.path.basename(parsed_url.path)
+def convert_csv_images_to_data_uri(input_path, output_path, image_column):
+    with open(input_path, newline='', encoding="utf-8") as infile:
+        reader = csv.DictReader(infile)
+        rows = list(reader)
 
-            # Download and update the image
-            local_image_path = download_image(image_url, file_name)
-            if local_image_path:
-                # Update the JSON with local path (in the form of '/assets/d01/{file_name}')
-                local_image_url = f"/assets/d01/{file_name}"
-                char["image"] = local_image_url
+    for row in rows:
+        url = row.get(image_column)
+        if url:
+            row[image_column] = image_to_data_uri(url)
 
-    # Save the updated JSON data back to the file
-    with open(json_file_path, 'w') as f:
-        json.dump(characters, f, indent=4)
-    print(f"Updated JSON file saved to: {json_file_path}")
+    with open(output_path, "w", newline='', encoding="utf-8") as outfile:
+        writer = csv.DictWriter(outfile, fieldnames=rows[0].keys())
+        writer.writeheader()
+        writer.writerows(rows)
 
-# Run the script
-update_json_with_local_path()
+    print(f"✅ Saved with base64 image data at: {output_path}")
+
+# === EXECUTE ===
+if __name__ == "__main__":
+    convert_csv_images_to_data_uri(input_csv, output_csv, image_url_column)
